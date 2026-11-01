@@ -1,0 +1,13 @@
+[project]
+name = "skylink"
+version = "0.1.0"
+description = "Skylight task status in Home Assistant"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+test = ["pytest-homeassistant-custom-component"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]

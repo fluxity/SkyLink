@@ -1,0 +1,954 @@
+{
+  "body": {
+    "data": [
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_e591082218",
+          "id": "id_e591082218-2026-10-31",
+          "origin": "user",
+          "position": 3,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": 1,
+          "routine": false,
+          "series": "str_e591082218",
+          "start": "2026-10-31",
+          "start_time": null,
+          "status": "pending",
+          "summary": "str_d8e763a6e9",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_e591082218-2026-10-31",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_4458a7c48c",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_c5395bca6c",
+          "id": "id_f098e597db",
+          "origin": "user",
+          "position": 4,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1;WKST=MO;BYHOUR=20"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": true,
+          "series": "str_c5395bca6c",
+          "start": "2026-10-31",
+          "start_time": "20:00",
+          "status": "pending",
+          "summary": "str_b6adb593e5",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_f098e597db",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_4458a7c48c",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_af2c2705e3",
+          "id": "id_a49424a491",
+          "origin": "user",
+          "position": 5,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1;BYHOUR=20"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": true,
+          "series": "str_af2c2705e3",
+          "start": "2026-10-31",
+          "start_time": "20:00",
+          "status": "pending",
+          "summary": "str_5981fe67d0",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_a49424a491",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_4458a7c48c",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_480f5bd0fc",
+          "id": "id_9ad2b2bb88",
+          "origin": "user",
+          "position": 8,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1;BYHOUR=14"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": true,
+          "series": "str_480f5bd0fc",
+          "start": "2026-10-31",
+          "start_time": "14:00",
+          "status": "pending",
+          "summary": "str_8e87fb5086",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_9ad2b2bb88",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_4458a7c48c",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_5ce189ec38",
+          "id": "id_5ce189ec38-2026-10-31",
+          "origin": "user",
+          "position": 3,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": false,
+          "series": "str_5ce189ec38",
+          "start": "2026-10-31",
+          "start_time": null,
+          "status": "pending",
+          "summary": "str_25d8c5c097",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_5ce189ec38-2026-10-31",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_13ae0cb5f9",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_dbecee701b",
+          "id": "id_dbecee701b-2026-10-31",
+          "origin": "user",
+          "position": 6,
+          "recurrence_set": [
+            "RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SA"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": false,
+          "series": "str_dbecee701b",
+          "start": "2026-10-31",
+          "start_time": null,
+          "status": "pending",
+          "summary": "str_7d4d873ffc",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_dbecee701b-2026-10-31",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_13ae0cb5f9",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_378e9a17e9",
+          "id": "id_378e9a17e9-2026-10-31",
+          "origin": "user",
+          "position": 11,
+          "recurrence_set": [
+            "RRULE:FREQ=WEEKLY;INTERVAL=1;BYDAY=SA"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": false,
+          "series": "str_378e9a17e9",
+          "start": "2026-10-31",
+          "start_time": null,
+          "status": "pending",
+          "summary": "str_f42985a572",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_378e9a17e9-2026-10-31",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_13ae0cb5f9",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_5c8e3a34c2",
+          "id": "id_5c8e3a34c2-2026-10-31",
+          "origin": "user",
+          "position": 22,
+          "recurrence_set": [
+            "RRULE:FREQ=WEEKLY;INTERVAL=2;WKST=SU;BYDAY=SA"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": 1,
+          "routine": false,
+          "series": "str_5c8e3a34c2",
+          "start": "2026-10-31",
+          "start_time": null,
+          "status": "pending",
+          "summary": "str_0c325897b5",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_5c8e3a34c2-2026-10-31",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_13ae0cb5f9",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_98be8ea187",
+          "id": "id_ad055cdefe",
+          "origin": "user",
+          "position": 2,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1;BYHOUR=6"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": true,
+          "series": "str_98be8ea187",
+          "start": "2026-10-31",
+          "start_time": "06:00",
+          "status": "pending",
+          "summary": "str_5331ffcfef",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_ad055cdefe",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_13ae0cb5f9",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": "str_7d7feb7935",
+          "group": "str_f277b96d4a",
+          "id": "id_8713c852f1",
+          "origin": "user",
+          "position": 3,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1;BYHOUR=14"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": true,
+          "series": "str_f277b96d4a",
+          "start": "2026-10-31",
+          "start_time": "14:00",
+          "status": "pending",
+          "summary": "str_5331ffcfef",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_8713c852f1",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_13ae0cb5f9",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": "str_7d7feb7935",
+          "group": "str_a2c2d8a603",
+          "id": "id_deae72e59e",
+          "origin": "user",
+          "position": 4,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1;BYHOUR=20"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": true,
+          "series": "str_a2c2d8a603",
+          "start": "2026-10-31",
+          "start_time": "20:00",
+          "status": "pending",
+          "summary": "str_5331ffcfef",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_deae72e59e",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_13ae0cb5f9",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": "str_da495da791",
+          "group": "str_94db05be3f",
+          "id": "id_94db05be3f-2026-10-31",
+          "origin": "user",
+          "position": 4,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": 1,
+          "routine": false,
+          "series": "str_94db05be3f",
+          "start": "2026-10-31",
+          "start_time": null,
+          "status": "pending",
+          "summary": "str_d8e763a6e9",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_94db05be3f-2026-10-31",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_1dfca09196",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": "str_37b296fd06",
+          "group": "str_8b711ddfcc",
+          "id": "id_27ffcbead9",
+          "origin": "user",
+          "position": 2,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;BYHOUR=14"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": true,
+          "series": "str_8b711ddfcc",
+          "start": "2026-10-31",
+          "start_time": "14:00",
+          "status": "pending",
+          "summary": "str_efecd02bbc",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_27ffcbead9",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_1dfca09196",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": "str_3bc2e166c9",
+          "group": "str_1230dd7454",
+          "id": "id_5b2004b099",
+          "origin": "user",
+          "position": 4,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;BYHOUR=14"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": true,
+          "series": "str_1230dd7454",
+          "start": "2026-10-31",
+          "start_time": "14:00",
+          "status": "pending",
+          "summary": "str_8e87fb5086",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_5b2004b099",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_1dfca09196",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": "str_d2b335aa08",
+          "group": "str_80af57155d",
+          "id": "id_9dc2e29858",
+          "origin": "user",
+          "position": 6,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1;BYHOUR=20"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": true,
+          "series": "str_80af57155d",
+          "start": "2026-10-31",
+          "start_time": "20:00",
+          "status": "pending",
+          "summary": "str_70edf0d946",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_9dc2e29858",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_1dfca09196",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": null,
+          "completed_on": null,
+          "description": null,
+          "emoji_icon": "str_d426e14b44",
+          "group": "str_2388119938",
+          "id": "id_c044606b9e",
+          "origin": "user",
+          "position": 8,
+          "recurrence_set": [
+            "RRULE:FREQ=DAILY;INTERVAL=1;BYHOUR=20"
+          ],
+          "recurring": true,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": true,
+          "series": "str_2388119938",
+          "start": "2026-10-31",
+          "start_time": "20:00",
+          "status": "pending",
+          "summary": "str_85a1c8af6e",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_c044606b9e",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_1dfca09196",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": null
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": "2026-05-12T10:22:53.521Z",
+          "completed_on": "2026-05-12",
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_e30174d0b7",
+          "id": "id_e30174d0b7",
+          "origin": "user",
+          "position": 5,
+          "recurrence_set": null,
+          "recurring": false,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": false,
+          "series": "str_e30174d0b7",
+          "start": null,
+          "start_time": null,
+          "status": "complete",
+          "summary": "str_08fe73daee",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_e30174d0b7",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_7ed348c4d4",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": {
+              "id": "id_7ed348c4d4",
+              "type": "category"
+            }
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": "2026-05-25T14:57:51.231Z",
+          "completed_on": "2026-05-25",
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_2246b2bbbe",
+          "id": "id_2246b2bbbe",
+          "origin": "user",
+          "position": 6,
+          "recurrence_set": null,
+          "recurring": false,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": false,
+          "series": "str_2246b2bbbe",
+          "start": null,
+          "start_time": null,
+          "status": "complete",
+          "summary": "str_e63bc817bc",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_2246b2bbbe",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_7ed348c4d4",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": {
+              "id": "id_7ed348c4d4",
+              "type": "category"
+            }
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      },
+      {
+        "attributes": {
+          "completed_at": "2026-08-24T16:00:00.000Z",
+          "completed_on": "2026-08-24",
+          "description": null,
+          "emoji_icon": null,
+          "group": "str_6f36245889",
+          "id": "id_6f36245889",
+          "origin": "user",
+          "position": 7,
+          "recurrence_set": null,
+          "recurring": false,
+          "recurring_until": null,
+          "renewal_interval": null,
+          "renewal_unit": null,
+          "reward_points": null,
+          "routine": false,
+          "series": "str_6f36245889",
+          "start": null,
+          "start_time": null,
+          "status": "complete",
+          "summary": "str_dbb0220e01",
+          "timer_seconds": null,
+          "up_for_grabs": false
+        },
+        "id": "id_6f36245889",
+        "relationships": {
+          "category": {
+            "data": {
+              "id": "id_7ed348c4d4",
+              "type": "category"
+            }
+          },
+          "completed_category": {
+            "data": {
+              "id": "id_7ed348c4d4",
+              "type": "category"
+            }
+          },
+          "habit_tracker": {
+            "data": null
+          },
+          "linked_task_group": {
+            "data": null
+          }
+        },
+        "type": "chore"
+      }
+    ],
+    "included": [
+      {
+        "attributes": {
+          "color": "str_b72438f2f3",
+          "id": "id_4458a7c48c",
+          "label": "str_6e8ff1e1a1",
+          "linked_to_profile": true,
+          "selected_for_chore_chart": true
+        },
+        "id": "id_4458a7c48c",
+        "type": "category"
+      },
+      {
+        "attributes": {
+          "color": "str_28c1348c56",
+          "id": "id_13ae0cb5f9",
+          "label": "str_6d10d3156c",
+          "linked_to_profile": true,
+          "selected_for_chore_chart": true
+        },
+        "id": "id_13ae0cb5f9",
+        "type": "category"
+      },
+      {
+        "attributes": {
+          "color": "str_1b2e1b6881",
+          "id": "id_1dfca09196",
+          "label": "str_fe273db838",
+          "linked_to_profile": true,
+          "selected_for_chore_chart": true
+        },
+        "id": "id_1dfca09196",
+        "type": "category"
+      },
+      {
+        "attributes": {
+          "color": "str_94f0a722c5",
+          "id": "id_7ed348c4d4",
+          "label": "str_123ab414c7",
+          "linked_to_profile": true,
+          "selected_for_chore_chart": true
+        },
+        "id": "id_7ed348c4d4",
+        "type": "category"
+      }
+    ]
+  },
+  "http_status": 200,
+  "params": {
+    "after": "2026-10-31",
+    "before": "2026-10-31",
+    "include_late": "false"
+  }
+}

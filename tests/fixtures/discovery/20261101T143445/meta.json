@@ -1,0 +1,12 @@
+{
+  "captured_local": "2026-11-01T14:34:45.410369-05:00",
+  "login_flow": "pkce",
+  "access_token_expires_in": 86400,
+  "http_status": {
+    "categories": 200,
+    "chores_today": 200,
+    "chores_window": 200,
+    "chores_with_late": 200,
+    "routines": 404
+  }
+}

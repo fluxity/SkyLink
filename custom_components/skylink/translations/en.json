@@ -1,0 +1,128 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sign in to Skylight",
+        "description": "Skylight has no official API, so this integration can break without notice. Accounts that sign in through Google or Apple have no password to use here.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "frame": {
+        "title": "Choose a calendar",
+        "data": {
+          "frame_id": "Calendar"
+        }
+      },
+      "children": {
+        "title": "Choose who to track",
+        "description": "Profiles on your Skylight chore chart are already selected. To change this later, remove and re-add the integration.",
+        "data": {
+          "children": "Profiles"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in to Skylight again",
+        "description": "Enter the current password for {email}.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Skylight rejected the email or password.",
+      "cannot_connect": "Couldn't reach Skylight. Try again.",
+      "no_children": "Select at least one profile."
+    },
+    "abort": {
+      "already_configured": "This calendar is already set up.",
+      "no_calendars": "No calendars were found on this account.",
+      "cannot_connect": "Couldn't reach Skylight. Try again.",
+      "reauth_successful": "Signed in again."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "SkyLink schedule",
+        "description": "A period shows as overdue once its deadline passes and tasks remain. Routines stay in the period they were created for in Skylight, even if you change these start times.",
+        "data": {
+          "start_morning": "Morning starts",
+          "start_afternoon": "Afternoon starts",
+          "start_evening": "Evening starts",
+          "deadline_weekday_morning": "Weekday morning deadline",
+          "deadline_weekday_afternoon": "Weekday afternoon deadline",
+          "deadline_weekday_evening": "Weekday evening deadline",
+          "deadline_weekend_morning": "Weekend morning deadline",
+          "deadline_weekend_afternoon": "Weekend afternoon deadline",
+          "deadline_weekend_evening": "Weekend evening deadline",
+          "untimed_period": "Period for chores with no time",
+          "poll_interval": "Poll interval"
+        },
+        "data_description": {
+          "untimed_period": "Chores with no time count toward this period, or choose Ignore to leave them out.",
+          "poll_interval": "How often to check Skylight, from 60 to 600 seconds."
+        }
+      }
+    },
+    "error": {
+      "starts_out_of_order": "Must be later than the previous period's start.",
+      "deadline_before_start": "Must be later than this period's start."
+    }
+  },
+  "selector": {
+    "untimed_period": {
+      "options": {
+        "morning": "Morning",
+        "afternoon": "Afternoon",
+        "evening": "Evening",
+        "ignore": "Ignore"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "morning": {
+        "name": "Morning",
+        "state": {
+          "none": "No tasks",
+          "upcoming": "Upcoming",
+          "pending": "Pending",
+          "overdue": "Overdue",
+          "done": "Done"
+        }
+      },
+      "afternoon": {
+        "name": "Afternoon",
+        "state": {
+          "none": "No tasks",
+          "upcoming": "Upcoming",
+          "pending": "Pending",
+          "overdue": "Overdue",
+          "done": "Done"
+        }
+      },
+      "evening": {
+        "name": "Evening",
+        "state": {
+          "none": "No tasks",
+          "upcoming": "Upcoming",
+          "pending": "Pending",
+          "overdue": "Overdue",
+          "done": "Done"
+        }
+      },
+      "current": {
+        "name": "Current",
+        "state": {
+          "none": "No tasks",
+          "upcoming": "Upcoming",
+          "pending": "Pending",
+          "overdue": "Overdue",
+          "done": "Done"
+        }
+      }
+    }
+  }
+}

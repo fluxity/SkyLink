@@ -1,0 +1,105 @@
+blueprint:
+  name: SkyLink status light
+  description: >-
+    Sets a light's color from a SkyLink sensor, and reapplies it when Home Assistant
+    starts. If Skylight is unreachable, the light keeps its last color.
+  domain: automation
+  source_url: https://github.com/fluxity/SkyLink/blob/main/blueprints/automation/skylink/status_light.yaml
+  input:
+    status_sensor:
+      name: SkyLink sensor
+      description: The household current sensor is the usual choice for one shared light.
+      selector:
+        entity:
+          filter:
+            - integration: skylink
+              domain: sensor
+    light_target:
+      name: Light
+      selector:
+        target:
+          entity:
+            - domain: light
+    brightness:
+      name: Brightness
+      default: 60
+      selector:
+        number:
+          min: 1
+          max: 100
+          unit_of_measurement: "%"
+    overdue_color:
+      name: Overdue color
+      default: [255, 0, 0]
+      selector:
+        color_rgb:
+    pending_color:
+      name: Pending color
+      default: [255, 160, 0]
+      selector:
+        color_rgb:
+    upcoming_color:
+      name: Upcoming color
+      default: [0, 80, 255]
+      selector:
+        color_rgb:
+    done_color:
+      name: Done color
+      default: [0, 255, 0]
+      selector:
+        color_rgb:
+    off_when_no_tasks:
+      name: Turn off when there are no tasks
+      description: When this is off, the light is left as it is while the period has no tasks.
+      default: true
+      selector:
+        boolean:
+
+mode: restart
+
+variables:
+  status_sensor: !input status_sensor
+  off_when_no_tasks: !input off_when_no_tasks
+
+triggers:
+  # An empty `to` fires on state changes only, not on attribute changes.
+  - trigger: state
+    entity_id: !input status_sensor
+    to:
+  - trigger: homeassistant
+    event: start
+
+actions:
+  - choose:
+      - conditions: "{{ is_state(status_sensor, 'overdue') }}"
+        sequence:
+          - action: light.turn_on
+            target: !input light_target
+            data:
+              rgb_color: !input overdue_color
+              brightness_pct: !input brightness
+      - conditions: "{{ is_state(status_sensor, 'pending') }}"
+        sequence:
+          - action: light.turn_on
+            target: !input light_target
+            data:
+              rgb_color: !input pending_color
+              brightness_pct: !input brightness
+      - conditions: "{{ is_state(status_sensor, 'upcoming') }}"
+        sequence:
+          - action: light.turn_on
+            target: !input light_target
+            data:
+              rgb_color: !input upcoming_color
+              brightness_pct: !input brightness
+      - conditions: "{{ is_state(status_sensor, 'done') }}"
+        sequence:
+          - action: light.turn_on
+            target: !input light_target
+            data:
+              rgb_color: !input done_color
+              brightness_pct: !input brightness
+      - conditions: "{{ is_state(status_sensor, 'none') and off_when_no_tasks }}"
+        sequence:
+          - action: light.turn_off
+            target: !input light_target

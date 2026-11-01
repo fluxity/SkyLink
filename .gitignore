@@ -1,0 +1,6 @@
+__pycache__/
+.discover-salt
+.pytest_cache/
+.venv/
+.tools/
+.venv-ha/

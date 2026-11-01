@@ -1,0 +1,105 @@
+blueprint:
+  name: SkyLink task notification
+  description: >-
+    Sends a notification listing the remaining tasks when a SkyLink sensor becomes
+    overdue, with optional reminders. It can also notify you when the tasks are done.
+    A deadline that passes while Skylight is unreachable doesn't send a notification.
+  domain: automation
+  source_url: https://github.com/fluxity/SkyLink/blob/main/blueprints/automation/skylink/notify_overdue.yaml
+  input:
+    status_sensor:
+      name: SkyLink sensor
+      description: A child's period sensor, a household period sensor, or the household current sensor.
+      selector:
+        entity:
+          filter:
+            - integration: skylink
+              domain: sensor
+    notify_services:
+      name: Notification actions
+      description: One per phone, such as notify.mobile_app_my_phone. Find yours under Developer Tools > Actions.
+      selector:
+        text:
+          multiple: true
+    repeat_minutes:
+      name: Reminder interval
+      description: Minutes between reminders while the sensor stays overdue. 0 turns reminders off.
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 120
+          unit_of_measurement: minutes
+          mode: box
+    max_reminders:
+      name: Maximum reminders
+      description: Reminders to send after the first notification.
+      default: 3
+      selector:
+        number:
+          min: 1
+          max: 20
+          mode: box
+    notify_when_done:
+      name: Notify when done
+      description: Also send a notification when every task is complete or skipped.
+      default: false
+      selector:
+        boolean:
+
+mode: restart
+
+variables:
+  status_sensor: !input status_sensor
+  notify_services: !input notify_services
+  repeat_minutes: !input repeat_minutes
+  max_reminders: !input max_reminders
+  notify_when_done: !input notify_when_done
+
+triggers:
+  - trigger: state
+    entity_id: !input status_sensor
+    to: overdue
+    not_from: [unavailable, unknown]
+    id: overdue
+  - trigger: state
+    entity_id: !input status_sensor
+    to: done
+    not_from: [unavailable, unknown]
+    id: done
+
+actions:
+  - choose:
+      - conditions: "{{ trigger.id == 'done' }}"
+        sequence:
+          - condition: "{{ notify_when_done }}"
+          - repeat:
+              for_each: "{{ notify_services }}"
+              sequence:
+                - action: "{{ repeat.item }}"
+                  continue_on_error: true
+                  data:
+                    title: "{{ state_attr(status_sensor, 'friendly_name') }} is done"
+                    message: "All tasks are finished."
+                    data:
+                      tag: "{{ status_sensor }}"
+    default:
+      - &send_overdue
+        repeat:
+          for_each: "{{ notify_services }}"
+          sequence:
+            - action: "{{ repeat.item }}"
+              continue_on_error: true
+              data:
+                title: "{{ state_attr(status_sensor, 'friendly_name') }} is overdue"
+                message: "Still to do: {{ state_attr(status_sensor, 'remaining') | join(', ') }}"
+                data:
+                  tag: "{{ status_sensor }}"
+      - condition: "{{ repeat_minutes | int(0) > 0 }}"
+      - repeat:
+          count: "{{ max_reminders | int(0) }}"
+          sequence:
+            - delay:
+                minutes: "{{ repeat_minutes | int(0) }}"
+            - condition: "{{ is_state(status_sensor, 'overdue') }}"
+            - *send_overdue
